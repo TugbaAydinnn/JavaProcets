@@ -65,5 +65,32 @@ public class Main {
         byte b3=(byte)i2;
         System.out.println("b3: "+b3);
 
+        double d_sayi1=70.25;
+        double d_sayi2=60d;
+        double d_sayi3=80.2;
+        double ort=(d_sayi1+d_sayi2+d_sayi3)/3;
+        System.out.print("ortalama: "+ort);
+        System.out.println();
+        //char-->2 byte ve boolen
+
+        char harf='A'; //tek tirnak kullanmalisin
+        char karakter1=1000;
+        char karakter2='\u063c';
+        System.out.print("karakter: "+karakter1);
+        System.out.println();
+        System.out.print("karakter: "+karakter2);
+
+        boolean yapilsinMi=true;//boolean degisken tanimlama
+        System.out.println();
+        //string veri tipleri--> ilkel veri tipi değil(stringler icin metodlar ve özellikler vardır)
+        String kelime="Merhaba";
+        System.out.println(kelime+",Hosgeldiniz...");
+
+        char c1='?';
+        String string1="Nasılsın ";
+        String birlestir=string1+c1;
+        System.out.println(birlestir);
+        System.out.println("Bu bir \t tab ornegidir.");
+        System.out.println("Bu bir \n alt satira gecme ornegidir");
     }
 }
