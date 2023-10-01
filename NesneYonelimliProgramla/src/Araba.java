@@ -18,6 +18,10 @@ public class Araba {
 
 
     }
+
+    public Araba(){
+        this(0,"Bilgi Yok",0,"Bilgi Yok");
+    }
     public void arabaOzellikYazdir(){
         System.out.println("tekerSayisi: "+tekerSayisi);
         System.out.println("marka: "+marka);

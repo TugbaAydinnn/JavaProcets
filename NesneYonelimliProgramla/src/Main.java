@@ -9,8 +9,14 @@ public class Main {
         Araba.sayac=2;
         System.out.println(Araba.sayac);
 
+        System.out.println("**************");
+
         Araba araba2=new Araba(4,"Golf",5,"kirmizi");
         araba2.arabaOzellikYazdir();
+
+        System.out.println("**************");
+        Araba araba3=new Araba();
+        araba3.arabaOzellikYazdir();
 
 
     }
