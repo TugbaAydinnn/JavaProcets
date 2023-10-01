@@ -18,6 +18,22 @@ public class Main {
         Araba araba3=new Araba();
         araba3.arabaOzellikYazdir();
 
+        System.out.println("**************");
+        Araba araba4=araba3;
+        araba4.setTekerSayisi(5);
+        araba4.arabaOzellikYazdir();
+
+        System.out.println("**************");
+        araba3.arabaOzellikYazdir();
+
+        System.out.println("**************");
+
+        if(araba4 == araba3)
+            System.out.println("Aynı objeyi gosteriyor.");
+        if(araba4 != araba2)
+            System.out.println("Aynı objeyi gostermiyorlar.");
+
+        new Araba(0,"Opel",5,"Mavi").arabaOzellikYazdir(); //referans olmadan bir kereligine metod cagirabilirsin.
 
     }
 }
