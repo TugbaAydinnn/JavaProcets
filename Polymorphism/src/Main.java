@@ -42,9 +42,24 @@ class Kopek extends Hayvan{
     }
 }
 public class Main {
+    /*
     public static void konus(Hayvan hayvan){
         System.out.println(hayvan.konus());
 
+    }*/
+    public static void konus(Object object){
+        if(object instanceof Kedi){
+            Kedi kedi=(Kedi)object; //tur donusumu
+            System.out.println(kedi.konus());
+        }
+        else if(object instanceof Kopek){
+            Kopek kopek=(Kopek) object;
+            System.out.println(kopek.konus());
+        }
+        else if (object instanceof  Hayvan){
+            Hayvan hayvan=(Hayvan) object;
+            System.out.println(hayvan.konus());
+        }
     }
     public static void main(String[] args) {
         /*
@@ -54,8 +69,19 @@ public class Main {
 
         Hayvan hayvan1=new Kopek("Karabas"); //polymorphism
         System.out.println(hayvan1.konus());
-        */
+
         konus(new Kopek("Karabas"));
         konus(new Kedi("Hera"));
+
+        Kopek kopek=new Kopek("Boncuk");
+        if(kopek instanceof Hayvan)
+            System.out.println("Bu nesne hayvan sınıfındandır...");
+   */
+
+
+
+        konus(new Kedi("Hera"));
     }
+
+
 }
